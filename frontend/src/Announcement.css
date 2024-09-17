@@ -1,0 +1,121 @@
+/* Container for the entire announcement page */
+.announcement-page-container {
+    padding: 20px;
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    max-height: 100vh; /* Ensure the container does not exceed viewport height */
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+  
+  /* Hide scrollbar for the announcement page container */
+  .announcement-page-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in WebKit browsers */
+  }
+  
+  .announcement-page-container {
+    -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+  }
+  
+  /* Title of the announcement page */
+  .announcement-page-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Container for announcement cards */
+  .announcement-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between cards */
+    max-width: 800px;
+    margin: 0 auto; /* Center container */
+  }
+  
+  /* Styling for individual announcement cards */
+  .announcement-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: box-shadow 0.3s, transform 0.3s;
+    max-height: 300px; /* Set a max-height for the card to enable scrolling */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  }
+  
+  /* Hide scrollbar for the announcement card */
+  .announcement-card::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in WebKit browsers */
+  }
+  
+  .announcement-card {
+    -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+  }
+  
+  /* Card title styling */
+  .announcement-card-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #000;
+  }
+  
+  /* Card date styling */
+  .announcement-card-date {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  /* Card content styling */
+  .announcement-card-content {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Styling for no announcement message */
+  .no-announcement {
+    font-size: 18px;
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .announcement-cards-container {
+      padding: 10px;
+    }
+  
+    .announcement-card {
+      padding: 10px;
+    }
+  
+    .announcement-card-title {
+      font-size: 20px;
+    }
+  
+    .announcement-card-date {
+      font-size: 12px;
+    }
+  
+    .announcement-card-content {
+      font-size: 14px;
+    }
+  }
+  
+  .qr-code-container {
+    margin-top: 20px;
+  }
+  
+  .qr-code-container button {
+    margin-bottom: 10px;
+  }
+  
+  .qr-code {
+    margin-top: 10px;
+  }
+  

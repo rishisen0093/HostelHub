@@ -1,0 +1,49 @@
+.admin-gatepass-container {
+    padding: 20px;
+  }
+  
+  .gatepass-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .gatepass-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gatepass-card h3 {
+    margin-top: 0;
+  }
+  
+  .gatepass-card p {
+    margin: 5px 0;
+  }
+  
+  .gatepass-actions {
+    margin-top: 10px;
+  }
+  
+  .accept-button, .deny-button {
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .accept-button {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .deny-button {
+    background-color: #f44336;
+    color: white;
+  }
+  

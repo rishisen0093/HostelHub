@@ -1,0 +1,151 @@
+/* Container for the entire page */
+.announcement-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Container for the form and announcements */
+.form-and-announcements {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Button to open the modal */
+.form-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.form-button:hover {
+  background-color: #0056b3;
+}
+
+/* Container for all announcements */
+.all-announcements-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Card for individual announcements */
+.announcement-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.announcement-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.announcement-card-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.announcement-card-date {
+  font-size: 14px;
+  color: #777;
+  margin: 5px 0;
+}
+
+.announcement-card-content {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+/* Message when no announcements are available */
+.no-announcement {
+  font-size: 16px;
+  color: #888;
+}
+
+/* Styles for the modal */
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #007bff;
+  /* background-color: #fff; */
+  color: white;
+  border-radius: 8px;
+  padding: 20px;
+  width: 50%;
+  max-height: 400px;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.announcement-title {
+  color: white;
+  padding: 10px;
+  margin: 0 0 20px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.announcement-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.form-input,
+.form-textarea {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.form-button:hover {
+  background-color: #0056b3;
+}
+
+.toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}

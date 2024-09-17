@@ -1,0 +1,125 @@
+/* GatepassForm.css */
+
+.gatepass-form-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.form-container {
+  /* flex: 3 ; */
+  margin-right: 20px;
+}
+
+.cards-container-wrapper {
+  flex: 1;
+}
+
+.new-gatepass {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.new-gatepass p {
+  margin: 5px 0;
+}
+
+.leave-passes {
+  border: 1px solid #ddd;
+  display: flex;
+  max-width: 400px;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card {
+  flex: 3;
+  border: 1px solid #ddd;
+  max-width: 250px;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  word-wrap: break-word; /* Ensures text breaks to fit inside the card */
+  overflow-wrap: break-word; /* Breaks long words that overflow */
+  overflow: hidden; /* Hides overflow content */
+}
+
+.card h4 {
+  margin: 0 0 10px;
+}
+
+.card p {
+  margin: 5px 0;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Adds ellipsis if text is too long */
+}
+
+.error {
+  color: red;
+  font-size: 0.875em;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+/* GatepassForm.css */
+
+/* Existing styles */
+
+.card-status {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+span{
+  margin-top: 0 !important;
+  margin-right: 5px;
+}
+.status-approved {
+  background-color: green;
+}
+
+.status-pending {
+  background-color: red;
+}
+
+
+
+/* Existing styles */
+
+/* Style for the QR code container */
+.qr-code-container {
+  margin-top: 10px;
+}
+
+.qr-code {
+  margin-top: 10px;
+}
+

@@ -1,0 +1,91 @@
+/* Container for the entire page */
+.complaint-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Title of the complaints page */
+.complaint-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Container for all complaints with a fixed height and scroll */
+.complaint-list-container {
+  max-height: 600px; /* Adjust as needed */
+  overflow-y: scroll; /* Enable scrolling */
+  scrollbar-width: none; /* For Firefox */
+}
+
+/* Hide scrollbar for WebKit browsers */
+.complaint-list-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Card for individual complaints */
+.complaint-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-bottom: 10px;
+}
+
+.complaint-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.complaint-card p {
+  margin: 5px 0;
+}
+
+.complaint-card strong {
+  font-weight: bold;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.status-success {
+  background-color: #28a745; /* Green color */
+}
+
+.status-fail {
+  background-color: #dc3545; /* Red color */
+}
+
+/* Button to update complaint status */
+.update-status-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.update-status-button:hover {
+  background-color: #0056b3;
+}
+
+/* Message when no complaints are available */
+.complaint-empty {
+  font-size: 16px;
+  color: #888;
+}
+
+.toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}

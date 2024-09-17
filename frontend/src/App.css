@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  padding: 0px !important;
+}
+.main-container {
+  display: flex;
+}
+main {
+  padding: 10px;
+}
+
+.title {
+  font-size: 3rem;
+  display: grid;
+  place-items: center;
+}
+
+/* login page css */
+.loginpage{
+  /* margin: 0 100px; */
+}
+
+.container{
+  width: 100vw;
+}
+
+/* Sidebar */
+.sidebar {
+  background: rgb(0, 7, 61);
+  color: white;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.top_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px;
+}
+.logo {
+  font-size: 18px;
+  line-height: 0;
+}
+.bars {
+  width: 30px;
+}
+.hide {
+  display: none;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  height: 30px;
+  padding: 10px;
+}
+.search input {
+  border: none;
+  margin-left: 10px;
+  border-radius: 5px;
+  background: rgb(238, 238, 238);
+
+  color: white;
+}
+
+.routes {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.link {
+  display: flex;
+  color: white;
+  gap: 10px;
+  padding: 5px 10px;
+  border-right: 4px solid transparent;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.link:hover {
+  border-right: 4px solid white;
+  background: rgb(45, 51, 89);
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.active {
+  border-right: 4px solid white;
+  background: rgb(45, 51, 89);
+}
+.link_text {
+  white-space: nowrap;
+  font-size: 15px;
+}
+
+.menu {
+  display: flex;
+  color: white;
+
+  padding: 5px 10px;
+  border-right: 4px solid transparent;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  justify-content: space-between;
+}
+.menu_item {
+  display: flex;
+  gap: 10px;
+}
+.menu_container {
+  display: flex;
+  flex-direction: column;
+}
+.menu_container .link {
+  padding-left: 20px;
+  border-bottom: #fff 0.5px solid;
+}
+
+/* Add this CSS in your styles file or within a <style> tag */
+.container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background-color: #f0f2f5;
+}
+
+form {
+background-color: #fff;
+padding: 2rem;
+border-radius: 10px;
+box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+max-width: 400px;
+width: 100%;
+display: grid;
+gap: 1.5rem;
+}
+
+h1 {
+text-align: center;
+color: #333;
+font-size: 1.8rem;
+margin-bottom: 1rem;
+}
+
+label {
+display: block;
+margin-bottom: 0.5rem;
+font-size: 1rem;
+color: #555;
+}
+
+input {
+width: 100%;
+padding: 0.75rem;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 1rem;
+background-color: #f9f9f9;
+}
+
+input:focus {
+outline: none;
+border-color: #007bff;
+background-color: #fff;
+}
+
+button {
+background-color: #007bff;
+color: #fff;
+padding: 0.75rem;
+font-size: 1rem;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+button:hover {
+background-color: #0056b3;
+}
+
+span {
+display: block;
+text-align: center;
+margin-top: 1rem;
+color: #333;
+}
+
+span a {
+color: #007bff;
+text-decoration: none;
+}
+
+span a:hover {
+text-decoration: underline;
+}
+
+/* Responsive styling */
+@media (max-width: 480px) {
+form {
+    padding: 1.5rem;
+}
+
+input, button {
+    font-size: 0.9rem;
+}
+}
+/* Sidebar Styles */
+.sidebar {
+position: relative;
+display: flex;
+flex-direction: column;
+background-color: #007bff;
+border-right: 1px solid #ddd;
+min-height: 100vh;
+}
+
+.sidebar-bottom {
+margin-top: auto;
+padding: 20px;
+background-color: #007bff;
+display: flex;
+align-items: center;
+}
+
+.user-info {
+margin-right: 10px;
+color: white;
+}
+
+.user-info p {
+font-size: 16px;
+color: white
+}
+
+.logout-button {
+padding: 10px 20px;
+background-color: #ff5e5e;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 14px;
+}
+
+.logout-button:hover {
+background-color: #e55b5b;
+}

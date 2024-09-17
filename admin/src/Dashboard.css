@@ -1,0 +1,311 @@
+.dashboard-container {
+  padding: 20px;
+  background-color: #f5f7fa;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.welcome-section {
+  background-color: #007bff;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.welcome-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.welcome-section span {
+  color: #ffd700; /* Gold color for HostelHub */
+}
+
+.welcome-section p {
+  font-size: 1.1rem;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.mess-details,
+.announcements {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mess-details img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.mess-details h3 {
+  color: #ff4500; /* OrangeRed color for Mess Details */
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.mess-details .mess-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.mess-details .mess-stats div {
+  background-color: #e0e4ea;
+  padding: 10px;
+  border-radius: 5px;
+  flex: 1;
+  text-align: center;
+  margin: 0 5px;
+}
+
+.mess-details .mess-stats span:first-child {
+  font-weight: bold;
+  color: #007bff; /* Blue color for Used, Left, Total */
+}
+
+.mess-details .mess-stats span:last-child {
+  font-size: 1.2rem;
+}
+
+/* Dashboard.css */
+
+.dashboard-container {
+  padding: 20px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logout-button {
+  padding: 10px 20px;
+  background-color: #ff5e5e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.welcome-section {
+  margin-bottom: 30px;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.mess-details {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.mess-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.mess-stats {
+  margin-top: 20px;
+}
+
+.users {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.users h3 {
+  margin-bottom: 20px;
+}
+
+.user-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.user-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: calc(50% - 20px); /* Adjust width for card layout */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.user-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.user-card h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.user-card p {
+  font-size: 14px;
+  color: #777;
+  margin-top: 5px;
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  text-align: center;
+}
+
+.modal-content h3 {
+  margin-bottom: 20px;
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content form div {
+  margin-bottom: 10px;
+}
+
+.modal-content button {
+  margin: 10px 5px; /* Add space between buttons */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-content button[type="submit"] {
+  background-color: #4caf50; /* Green for submit */
+  margin: 10px;
+  color: white;
+}
+
+.modal-content button:not([type="submit"]) {
+  background-color: #ff5e5e; /* Red for other buttons */
+  color: white;
+}
+
+.update-button{
+  margin: 10px 10px;
+}
+
+/* Dashboard.css */
+.search-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+
+.dashboard-container {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.recent-complaints {
+  margin-top: 20px;
+}
+
+.complaint-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.complaint-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.complaint-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.complaint-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.status-success {
+  background-color: #4caf50;
+}
+
+.status-fail {
+  background-color: #f44336;
+}
+
+.complaint-card p {
+  margin: 5px 0;
+}
+
+.complaint-card h4 {
+  margin: 0;
+  font-size: 16px;
+}

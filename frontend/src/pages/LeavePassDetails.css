@@ -1,0 +1,85 @@
+/* LeavePassDetails.css */
+
+.leave-pass-details-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .leave-pass-card {
+    background-color: #f9fcfd; /* Light blue background hint */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Light blue shadow */
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #e0f0ff; /* Light blue border */
+  }
+  
+  .leave-pass-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #e0f0ff; /* Light blue bottom border */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .leave-pass-title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .leave-pass-status-approved {
+    display: flex;
+    align-items: center;
+  }
+  
+  .leave-pass-status-approved svg {
+    color: #4CAF50;
+  }
+  
+  .leave-pass-body {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .leave-pass-body p {
+    margin: 10px 0;
+  }
+  
+  .leave-pass-body p.description {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .leave-pass-body p.description:hover .description-expand {
+    display: block;
+  }
+  
+  .description-expand {
+    display: none;
+    margin-top: 10px;
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .description-expand:hover {
+    color: #0056b3;
+  }
+  
+  .full-description {
+    display: none;
+  }
+  

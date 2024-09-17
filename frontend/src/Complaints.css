@@ -1,0 +1,149 @@
+/* Container for the entire complaints page */
+.complaints-page {
+  padding: 20px;
+  /* width: 100%; */
+  background-color: #f4f4f4;
+  font-family: "Arial", sans-serif;
+}
+
+/* Flexbox container to arrange form and complaints list side by side */
+.complaints-container {
+  display: flex;
+  justify-content: flex-start; /* Adjust spacing between form and complaints list */
+  gap: 40px; /* Space between the form and the list */
+  align-items: flex-start; /* Align items to the top */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+main {
+  width: 100%;
+}
+/* Styling for the complaint form */
+.complaints-form {
+  flex: 1;
+  max-width: 25%;
+  background-color: #007bff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Add margin to the bottom for smaller screens */
+}
+
+.complaints-form-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.complaints-form-group {
+  margin-bottom: 15px;
+}
+
+.complaints-form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.complaints-form-input,
+.complaints-form-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.complaint-page {
+  margin-left: 210px; /* Adjust based on sidebar width */
+}
+
+.complaint-grid {
+  padding: 10px;
+}
+
+.complaints-form-textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.complaints-form-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #000dff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.complaints-form-button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the complaints list */
+.complaints-list {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  overflow-y: auto;
+  max-height: 650px;
+}
+
+.complaints-list-heading {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.complaint-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #fafafa;
+  transition: box-shadow 0.3s;
+}
+
+.complaint-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.complaint-item-detail {
+  margin: 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.complaints-list-empty {
+  font-size: 18px;
+  color: #888;
+  text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .complaints-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .complaints-form,
+  .complaints-list {
+    max-width: 100%;
+  }
+}
+/*  for glowing dot on statys true or false */
+.glowing-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: 5px;
+  animation: glow-pulse 1.5s infinite alternate;
+}
